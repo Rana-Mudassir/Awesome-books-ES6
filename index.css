@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-size: 26px;
+  margin: 0;
+  line-height: 1.5rem;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#book-List {
+  border: 1px solid black;
+}
+
+.tab1 {
+  border-right: 2px solid rgb(54, 47, 47);
+}
+
+.nav-link {
+  cursor: alias;
+  display: block;
+}
+
+.tab2 {
+  border-right: 2px solid rgb(54, 47, 47);
+}
+
+.page {
+  display: none;
+  border-radius: 7px;
+  margin-top: 55px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  padding: 8px 32px;
+}
+
+.page.is-active {
+  display: block;
+}

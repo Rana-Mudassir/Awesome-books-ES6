@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome Books with ES6</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <base href="/" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container">
+          <a class="navbar-brand" id="nav2" href="#">Awesome-Books</a>
+
+          <div class="navbar-nav id='nav3' ms-auto">
+            <a
+              class="nav-link tab1"
+              onclick="return show('page1', 'page2', 'page4');"
+            >
+              List
+            </a>
+            <a
+              class="nav-link tab2"
+              onclick="return show('page2', 'page1', 'page4');"
+            >
+              Add-New
+            </a>
+            <a
+              class="nav-link tab3"
+              onclick="return show('page4', 'page1', 'page2');"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Date and Time display -->
+      <p id="show-date" class="text-end"></p>
+
+      <div id="page1" class="page">
+        <h2 class="text-center">All Awesome books</h2>
+        <table class="table table-striped mt-4">
+          <tbody id="book-List"></tbody>
+        </table>
+      </div>
+
+      <div id="page2" class="page is-active">
+        <h2 class="text-center">Add New Book</h2>
+        <form id="bookForm1">
+          <div class="formGroup">
+            <label id="lable1" for="title">Title</label>
+            <input type="text" id="Title" class="form-control" />
+          </div>
+          <div class="formGroup">
+            <label id="lable2" for="author">Author</label>
+            <input type="text" id="Author" class="form-control" />
+          </div>
+          <div class="buttonDiv text-center mt-3">
+            <input
+              id="lable2"
+              type="submit"
+              value="Add New Book"
+              class="btn btn-primary"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div id="page4" class="page">
+        <h2 class="text-center">Contact-Information</h2>
+        <div class="ms-4">
+          <p>
+            Do you have any questions ?,
+            <br />
+            You can reach us!
+          </p>
+          <ul>
+            <li>My Email: abc@gmail.com</li>
+            <li>My Phone number: +92 434241</li>
+            <li>
+              My Address: house numbr abc, abc street, Berminghom
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <footer id="footer" class="border border-dark mt-5 mb-2">
+        <p class="m-1">Copyright 2023</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script type="module" src="index.js"></script> -->
+  </body>
+</html>
